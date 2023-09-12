@@ -26,5 +26,22 @@ namespace lib
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void signupbtn_Click(object sender, EventArgs e)
+        {
+            RegisterForm rForm = new RegisterForm();
+            rForm.Show();
+            this.Hide();
+        }
+
+        private void login_showpwd_CheckedChanged(object sender, EventArgs e)
+        {
+            login_password.PasswordChar = login_showpwd.Checked ? '\0' : '*';
+        }
     }
 }
