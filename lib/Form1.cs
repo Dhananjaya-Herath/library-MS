@@ -40,7 +40,10 @@ namespace lib
             {
                 timer1.Stop();
 
-               
+                LoginForm lForm = new LoginForm();
+                lForm.Show();
+                this.Hide();
+
 
             }
         }

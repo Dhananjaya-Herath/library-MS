@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace lib
 {
-    public partial class Form2 : Form
+    public partial class LoginForm : Form
     {
-        public Form2()
+        public LoginForm()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
