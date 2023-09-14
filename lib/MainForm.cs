@@ -33,5 +33,48 @@ namespace lib
                 this.Hide();
             }
         }
+
+        private void returnBooks1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashboard_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = true;
+            addBooks1.Visible = false;
+            returnBooks1.Visible = false;
+            issueBooks1.Visible = false;
+
+            dashboard dForm = dashboard1 as dashboard;
+            if (dForm != null)
+            {
+                
+            }
+        }
+
+        private void addbook_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            addBooks1.Visible = true;
+            returnBooks1.Visible = false;
+            issueBooks1.Visible = false;
+        }
+
+        private void issuebook_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            addBooks1.Visible = false;
+            returnBooks1.Visible = false;
+            issueBooks1.Visible = true;
+        }
+
+        private void returnbook_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            addBooks1.Visible = false;
+            returnBooks1.Visible = true;
+            issueBooks1.Visible = false;
+        }
     }
 }
