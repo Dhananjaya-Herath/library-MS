@@ -32,23 +32,24 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.addBooks_updatebtn = new System.Windows.Forms.Button();
-            this.addBooks_addbtn = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Addbook_importbtn = new System.Windows.Forms.Button();
             this.addBooks_clearbtn = new System.Windows.Forms.Button();
             this.addBooks_deletebtn = new System.Windows.Forms.Button();
+            this.addBooks_status = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.addBooks_published = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.addBooks_updatebtn = new System.Windows.Forms.Button();
+            this.addBooks_addbtn = new System.Windows.Forms.Button();
+            this.addBooks_Author = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.addBooks_picture = new System.Windows.Forms.PictureBox();
+            this.addBooks_bookTitle = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addBooks_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -86,126 +87,36 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.Addbook_importbtn);
             this.panel1.Controls.Add(this.addBooks_clearbtn);
             this.panel1.Controls.Add(this.addBooks_deletebtn);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.addBooks_status);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.addBooks_published);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.addBooks_updatebtn);
             this.panel1.Controls.Add(this.addBooks_addbtn);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.addBooks_Author);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.addBooks_picture);
+            this.panel1.Controls.Add(this.addBooks_bookTitle);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(18, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 540);
             this.panel1.TabIndex = 2;
             // 
-            // addBooks_updatebtn
+            // Addbook_importbtn
             // 
-            this.addBooks_updatebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
-            this.addBooks_updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBooks_updatebtn.ForeColor = System.Drawing.Color.White;
-            this.addBooks_updatebtn.Location = new System.Drawing.Point(132, 369);
-            this.addBooks_updatebtn.Name = "addBooks_updatebtn";
-            this.addBooks_updatebtn.Size = new System.Drawing.Size(99, 41);
-            this.addBooks_updatebtn.TabIndex = 16;
-            this.addBooks_updatebtn.Text = "UPDATE";
-            this.addBooks_updatebtn.UseVisualStyleBackColor = false;
-            // 
-            // addBooks_addbtn
-            // 
-            this.addBooks_addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
-            this.addBooks_addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBooks_addbtn.ForeColor = System.Drawing.Color.White;
-            this.addBooks_addbtn.Location = new System.Drawing.Point(7, 369);
-            this.addBooks_addbtn.Name = "addBooks_addbtn";
-            this.addBooks_addbtn.Size = new System.Drawing.Size(99, 41);
-            this.addBooks_addbtn.TabIndex = 15;
-            this.addBooks_addbtn.Text = "ADD";
-            this.addBooks_addbtn.UseVisualStyleBackColor = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(94, 227);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 22);
-            this.textBox6.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(4, 232);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 16);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Author";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(95, 188);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 22);
-            this.textBox5.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 191);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 16);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Book Title";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 272);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Published";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pictureBox1.Location = new System.Drawing.Point(83, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(93, 268);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(152, 22);
-            this.dateTimePicker1.TabIndex = 18;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 309);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 16);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Status";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(93, 305);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 24);
-            this.comboBox1.TabIndex = 20;
+            this.Addbook_importbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.Addbook_importbtn.ForeColor = System.Drawing.Color.White;
+            this.Addbook_importbtn.Location = new System.Drawing.Point(83, 143);
+            this.Addbook_importbtn.Name = "Addbook_importbtn";
+            this.Addbook_importbtn.Size = new System.Drawing.Size(100, 30);
+            this.Addbook_importbtn.TabIndex = 23;
+            this.Addbook_importbtn.Text = "Import";
+            this.Addbook_importbtn.UseVisualStyleBackColor = false;
+            this.Addbook_importbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // addBooks_clearbtn
             // 
@@ -231,6 +142,109 @@
             this.addBooks_deletebtn.Text = "DELETE";
             this.addBooks_deletebtn.UseVisualStyleBackColor = false;
             // 
+            // addBooks_status
+            // 
+            this.addBooks_status.FormattingEnabled = true;
+            this.addBooks_status.Location = new System.Drawing.Point(93, 305);
+            this.addBooks_status.Name = "addBooks_status";
+            this.addBooks_status.Size = new System.Drawing.Size(150, 24);
+            this.addBooks_status.TabIndex = 20;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(4, 309);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 16);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Status";
+            // 
+            // addBooks_published
+            // 
+            this.addBooks_published.Location = new System.Drawing.Point(93, 268);
+            this.addBooks_published.Name = "addBooks_published";
+            this.addBooks_published.Size = new System.Drawing.Size(152, 22);
+            this.addBooks_published.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 272);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 16);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Published";
+            // 
+            // addBooks_updatebtn
+            // 
+            this.addBooks_updatebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.addBooks_updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBooks_updatebtn.ForeColor = System.Drawing.Color.White;
+            this.addBooks_updatebtn.Location = new System.Drawing.Point(132, 369);
+            this.addBooks_updatebtn.Name = "addBooks_updatebtn";
+            this.addBooks_updatebtn.Size = new System.Drawing.Size(99, 41);
+            this.addBooks_updatebtn.TabIndex = 16;
+            this.addBooks_updatebtn.Text = "UPDATE";
+            this.addBooks_updatebtn.UseVisualStyleBackColor = false;
+            // 
+            // addBooks_addbtn
+            // 
+            this.addBooks_addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(128)))), ((int)(((byte)(87)))));
+            this.addBooks_addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBooks_addbtn.ForeColor = System.Drawing.Color.White;
+            this.addBooks_addbtn.Location = new System.Drawing.Point(7, 369);
+            this.addBooks_addbtn.Name = "addBooks_addbtn";
+            this.addBooks_addbtn.Size = new System.Drawing.Size(99, 41);
+            this.addBooks_addbtn.TabIndex = 15;
+            this.addBooks_addbtn.Text = "ADD";
+            this.addBooks_addbtn.UseVisualStyleBackColor = false;
+            // 
+            // addBooks_Author
+            // 
+            this.addBooks_Author.Location = new System.Drawing.Point(94, 227);
+            this.addBooks_Author.Name = "addBooks_Author";
+            this.addBooks_Author.Size = new System.Drawing.Size(150, 22);
+            this.addBooks_Author.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(4, 232);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 16);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Author";
+            // 
+            // addBooks_picture
+            // 
+            this.addBooks_picture.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.addBooks_picture.Location = new System.Drawing.Point(83, 46);
+            this.addBooks_picture.Name = "addBooks_picture";
+            this.addBooks_picture.Size = new System.Drawing.Size(100, 100);
+            this.addBooks_picture.TabIndex = 10;
+            this.addBooks_picture.TabStop = false;
+            // 
+            // addBooks_bookTitle
+            // 
+            this.addBooks_bookTitle.Location = new System.Drawing.Point(95, 188);
+            this.addBooks_bookTitle.Name = "addBooks_bookTitle";
+            this.addBooks_bookTitle.Size = new System.Drawing.Size(150, 22);
+            this.addBooks_bookTitle.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 191);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 16);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Book Title";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AddBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -244,7 +258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addBooks_picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -258,15 +272,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button addBooks_updatebtn;
         private System.Windows.Forms.Button addBooks_addbtn;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox addBooks_Author;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.PictureBox addBooks_picture;
+        private System.Windows.Forms.TextBox addBooks_bookTitle;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox addBooks_status;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker addBooks_published;
         private System.Windows.Forms.Button addBooks_clearbtn;
         private System.Windows.Forms.Button addBooks_deletebtn;
+        private System.Windows.Forms.Button Addbook_importbtn;
     }
 }
