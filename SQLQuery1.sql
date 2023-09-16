@@ -1,7 +1,7 @@
 ﻿CREATE TABLE books(
 id INT PRIMARY KEY IDENTITY(1,1),
-book_title VARCHAR(MAX) NULL,
-author VARCHAR(MAX) NULL,
+book_Title VARCHAR(MAX) NULL,
+Author VARCHAR(MAX) NULL,
 published_date VARCHAR(MAX) NULL,
 status VARCHAR(MAX) NULL,
 date_insert VARCHAR(MAX) NULL,

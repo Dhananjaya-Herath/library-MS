@@ -60,7 +60,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(291, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(571, 540);
+            this.panel2.Size = new System.Drawing.Size(763, 540);
             this.panel2.TabIndex = 3;
             // 
             // dataGridView1
@@ -70,8 +70,9 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(567, 471);
+            this.dataGridView1.Size = new System.Drawing.Size(725, 471);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
@@ -129,6 +130,7 @@
             this.addBooks_clearbtn.TabIndex = 22;
             this.addBooks_clearbtn.Text = "CLEAR";
             this.addBooks_clearbtn.UseVisualStyleBackColor = false;
+            this.addBooks_clearbtn.Click += new System.EventHandler(this.addBooks_clearbtn_Click);
             // 
             // addBooks_deletebtn
             // 
@@ -141,10 +143,14 @@
             this.addBooks_deletebtn.TabIndex = 21;
             this.addBooks_deletebtn.Text = "DELETE";
             this.addBooks_deletebtn.UseVisualStyleBackColor = false;
+            this.addBooks_deletebtn.Click += new System.EventHandler(this.addBooks_deletebtn_Click);
             // 
             // addBooks_status
             // 
             this.addBooks_status.FormattingEnabled = true;
+            this.addBooks_status.Items.AddRange(new object[] {
+            "good",
+            "bad"});
             this.addBooks_status.Location = new System.Drawing.Point(93, 305);
             this.addBooks_status.Name = "addBooks_status";
             this.addBooks_status.Size = new System.Drawing.Size(150, 24);
@@ -188,6 +194,7 @@
             this.addBooks_updatebtn.TabIndex = 16;
             this.addBooks_updatebtn.Text = "UPDATE";
             this.addBooks_updatebtn.UseVisualStyleBackColor = false;
+            this.addBooks_updatebtn.Click += new System.EventHandler(this.addBooks_updatebtn_Click);
             // 
             // addBooks_addbtn
             // 
@@ -200,6 +207,7 @@
             this.addBooks_addbtn.TabIndex = 15;
             this.addBooks_addbtn.Text = "ADD";
             this.addBooks_addbtn.UseVisualStyleBackColor = false;
+            this.addBooks_addbtn.Click += new System.EventHandler(this.addBooks_addbtn_Click);
             // 
             // addBooks_Author
             // 
@@ -224,6 +232,7 @@
             this.addBooks_picture.Location = new System.Drawing.Point(83, 46);
             this.addBooks_picture.Name = "addBooks_picture";
             this.addBooks_picture.Size = new System.Drawing.Size(100, 100);
+            this.addBooks_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.addBooks_picture.TabIndex = 10;
             this.addBooks_picture.TabStop = false;
             // 
@@ -252,7 +261,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AddBooks";
-            this.Size = new System.Drawing.Size(880, 565);
+            this.Size = new System.Drawing.Size(1079, 565);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

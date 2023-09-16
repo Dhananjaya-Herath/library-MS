@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.greet_label = new System.Windows.Forms.Label();
-            this.dashboard_btn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.logout_btn = new System.Windows.Forms.Button();
             this.returnbook_btn = new System.Windows.Forms.Button();
             this.issuebook_btn = new System.Windows.Forms.Button();
             this.addbook_btn = new System.Windows.Forms.Button();
+            this.dashboard_btn = new System.Windows.Forms.Button();
+            this.greet_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dashboard1 = new lib.dashboard();
             this.addBooks1 = new lib.AddBooks();
             this.issueBooks1 = new lib.IssueBooks();
             this.returnBooks1 = new lib.ReturnBooks();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,6 +61,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1100, 30);
             this.panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(1055, 6);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(19, 18);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -90,30 +102,6 @@
             this.panel3.Size = new System.Drawing.Size(220, 570);
             this.panel3.TabIndex = 1;
             // 
-            // greet_label
-            // 
-            this.greet_label.AutoSize = true;
-            this.greet_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.greet_label.ForeColor = System.Drawing.Color.White;
-            this.greet_label.Location = new System.Drawing.Point(34, 121);
-            this.greet_label.Name = "greet_label";
-            this.greet_label.Size = new System.Drawing.Size(134, 18);
-            this.greet_label.TabIndex = 1;
-            this.greet_label.Text = "Wellcome Admin";
-            // 
-            // dashboard_btn
-            // 
-            this.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dashboard_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboard_btn.ForeColor = System.Drawing.Color.White;
-            this.dashboard_btn.Location = new System.Drawing.Point(10, 170);
-            this.dashboard_btn.Name = "dashboard_btn";
-            this.dashboard_btn.Size = new System.Drawing.Size(200, 45);
-            this.dashboard_btn.TabIndex = 2;
-            this.dashboard_btn.Text = "DASHBOARD";
-            this.dashboard_btn.UseVisualStyleBackColor = true;
-            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -124,30 +112,6 @@
             this.label3.Size = new System.Drawing.Size(73, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "LOG OUT";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1055, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dashboard1);
-            this.panel2.Controls.Add(this.addBooks1);
-            this.panel2.Controls.Add(this.issueBooks1);
-            this.panel2.Controls.Add(this.returnBooks1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(220, 30);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 570);
-            this.panel2.TabIndex = 2;
             // 
             // logout_btn
             // 
@@ -207,6 +171,30 @@
             this.addbook_btn.UseVisualStyleBackColor = true;
             this.addbook_btn.Click += new System.EventHandler(this.addbook_btn_Click);
             // 
+            // dashboard_btn
+            // 
+            this.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dashboard_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_btn.ForeColor = System.Drawing.Color.White;
+            this.dashboard_btn.Location = new System.Drawing.Point(10, 170);
+            this.dashboard_btn.Name = "dashboard_btn";
+            this.dashboard_btn.Size = new System.Drawing.Size(200, 45);
+            this.dashboard_btn.TabIndex = 2;
+            this.dashboard_btn.Text = "DASHBOARD";
+            this.dashboard_btn.UseVisualStyleBackColor = true;
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
+            // 
+            // greet_label
+            // 
+            this.greet_label.AutoSize = true;
+            this.greet_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greet_label.ForeColor = System.Drawing.Color.White;
+            this.greet_label.Location = new System.Drawing.Point(34, 121);
+            this.greet_label.Name = "greet_label";
+            this.greet_label.Size = new System.Drawing.Size(134, 18);
+            this.greet_label.TabIndex = 1;
+            this.greet_label.Text = "Wellcome Admin";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::lib.Properties.Resources.icons8_library_100px;
@@ -215,6 +203,18 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dashboard1);
+            this.panel2.Controls.Add(this.addBooks1);
+            this.panel2.Controls.Add(this.issueBooks1);
+            this.panel2.Controls.Add(this.returnBooks1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(220, 30);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(880, 570);
+            this.panel2.TabIndex = 2;
             // 
             // dashboard1
             // 
@@ -260,8 +260,8 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
